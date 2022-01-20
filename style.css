@@ -1,93 +1,93 @@
 *{
-    margin: 0;
-    padding: 0;
-    font-family: 'VT323', monospace;
-    font-size: 2.5vw;
-    box-sizing: border-box;
-    text-align: center;
-    line-height: 1.5;
+  margin: 0;
+  padding: 0;
+  font-family: 'VT323', monospace;
+  font-size: 2.5vw;
+  box-sizing: border-box;
+  text-align: center;
+  line-height: 1.5;
 }
 
-    @keyframes landing {
-        0%{
-            color: green;
-        }
+  @keyframes landing {
+      0%{
+          color: green;
+      }
 
-        25%{
-            color: black;
-        }
+      25%{
+          color: black;
+      }
 
-        75%{
-            color:gold;
-        }
+      75%{
+          color:gold;
+      }
 
-        100%{
-            color: navy;
-        }
-    }
-
-    h1{
-        text-align: center;
-        font-size: 3em;
-        padding: 70px 40px 100px 40px;
-        animation-name: landing;
-        animation-duration: 10s;
-        animation-iteration-count: infinite;
-    }
-
-  img{
-    border-radius: 40%;
-    margin-left: auto;
-    margin-right: auto;
-    height: 100%;
-    max-width: 100%;
+      100%{
+          color: navy;
+      }
   }
 
-  .img-caption{
+  h1{
       text-align: center;
-      font-weight: 200;
+      font-size: 3em;
+      padding: 70px 40px 100px 40px;
+      animation-name: landing;
+      animation-duration: 10s;
+      animation-iteration-count: infinite;
+  }
+
+img{
+  border-radius: 40%;
+  margin-left: auto;
+  margin-right: auto;
+  height: 100%;
+  max-width: 100%;
+}
+
+.img-caption{
+    text-align: center;
+    font-weight: 200;
 }
 
 .column {
-    float: left;
-    width: 50%;
-    padding: 30px;
-    height: 300px;
-    margin-top: 50px;
+  float: left;
+  width: 50%;
+  padding: 30px;
+  height: 300px;
+  margin-top: 50px;
 }
 
 @media screen and (max-width: 600px) {
-    .column {
-      width: 100%;
-      float: left;
-    padding: 30px;
-    height: 300px;
-    margin-top: 50px;
-    }
-
-    .img-column{
-        width: 100%;
-    }
-  }
-
-  #tribute-link {
-      text-align: center;
-      display: block;
-      margin: auto;
-      position: relative;
-      left:4px; top:450px;
-  }
-
-  .img-row{
-      display: flex;
-  }
-
-  .img-column {
-    flex: 50%;
-    padding: 25px;
+  .column {
+    width: 100%;
     float: left;
+  padding: 30px;
+  height: 300px;
+  margin-top: 50px;
   }
 
-  #candidates{
-    border: 10px solid pink;
+  .img-column{
+      width: 100%;
   }
+}
+
+#tribute-link {
+    text-align: center;
+    display: block;
+    margin: auto;
+    position: relative;
+    left:4px; top:450px;
+}
+
+.img-row{
+    display: flex;
+}
+
+.img-column {
+  flex: 50%;
+  padding: 25px;
+  float: left;
+}
+
+#candidates{
+  border: 10px solid pink;
+}
