@@ -1,41 +1,41 @@
-*{
+* {
   margin: 0;
   padding: 0;
-  font-family: 'VT323', monospace;
+  font-family: "VT323", monospace;
   font-size: 2.5vw;
   box-sizing: border-box;
   text-align: center;
   line-height: 1.5;
 }
 
-  @keyframes landing {
-      0%{
-          color: green;
-      }
-
-      25%{
-          color: black;
-      }
-
-      75%{
-          color:gold;
-      }
-
-      100%{
-          color: navy;
-      }
+@keyframes landing {
+  0% {
+    color: green;
   }
 
-  h1{
-      text-align: center;
-      font-size: 3em;
-      padding: 25px 40px 25px 40px;
-      animation-name: landing;
-      animation-duration: 10s;
-      animation-iteration-count: infinite;
+  25% {
+    color: black;
   }
 
-img{
+  75% {
+    color: gold;
+  }
+
+  100% {
+    color: navy;
+  }
+}
+
+h1 {
+  text-align: center;
+  font-size: 3em;
+  padding: 25px 40px 25px 40px;
+  animation-name: landing;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+}
+
+img {
   border-radius: 5%;
   margin-left: auto;
   margin-right: auto;
@@ -43,9 +43,9 @@ img{
   max-width: 100%;
 }
 
-.img-caption{
-    text-align: center;
-    font-weight: 200;
+.img-caption {
+  text-align: center;
+  font-weight: 200;
 }
 
 .column {
@@ -56,30 +56,17 @@ img{
   margin-top: 30px;
 }
 
-@media screen and (max-width: 600px) {
-  .column {
-    width: 100%;
-    float: left;
-  padding: 30px;
-  height: 300px;
-  margin-top: 50px;
-  }
-
-  .img-column{
-      width: 100%;
-  }
-}
-
 #tribute-link {
-    text-align: center;
-    display: block;
-    margin: auto;
-    position: relative;
-    left:4px; top:450px;
+  text-align: center;
+  display: block;
+  margin: auto;
+  position: relative;
+  left: 4px;
+  top: 450px;
 }
 
-.img-row{
-    display: flex;
+.img-row {
+  display: flex;
 }
 
 .img-column {
@@ -88,6 +75,32 @@ img{
   float: left;
 }
 
-#candidates{
+#candidates {
   border: 10px solid pink;
+}
+
+@media screen and (max-width: 600px) {
+  #tribute-link {
+    position: initial;
+    left: initial;
+    top: initial;
+  }
+  .column {
+    width: 100%;
+    float: none;
+    padding: 30px;
+    height: 300px;
+    margin-top: 50px;
+  }
+  .img-row {
+    display: block;
+  }
+  .img-column {
+    width: 100%;
+    float: none;
+    flex: none;
+  }
+  .img-column img {
+    height: auto;
+  }
 }
