@@ -103,7 +103,8 @@ img:hover {
     float: none;
     padding: 0px;
     height: 300px;
-    margin-top: 50px;
+    margin: 5px;
+    padding: 5px;
   }
   .img-row {
     display: block;
