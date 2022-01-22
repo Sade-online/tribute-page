@@ -88,15 +88,20 @@ img:hover {
 }
 
 @media screen and (max-width: 600px) {
+  * {
+    font-size: 3.5vw;
+  }
+  
   #tribute-link {
     position: initial;
     left: initial;
     top: initial;
+    margin: 40px;
   }
   .column {
     width: 100%;
     float: none;
-    padding: 30px;
+    padding: 0px;
     height: 300px;
     margin-top: 50px;
   }
